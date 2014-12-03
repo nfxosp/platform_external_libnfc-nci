@@ -44,7 +44,7 @@ include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
 ifneq ($(BOARD_NFC_HAL_SUFFIX),)
-    HAL_SUFFIX := $(BOARD_NFC_HAL_SUFFIX)
+    HAL_SUFFIX := bcm2079x.$(BOARD_NFC_HAL_SUFFIX)
 else
     HAL_SUFFIX := bcm2079x.default
 endif
